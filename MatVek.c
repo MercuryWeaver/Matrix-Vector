@@ -261,12 +261,6 @@ void InnerproductMatrix(Matrix FirstMat, Matrix SecondMat) {
     printf("Inner product is: %0.2lf", result);
 }
 
-void freeMatrix(Matrix *m) {
-    free(m->data);
-    m->data = NULL;
-    m->rows = m->cols = 0;
-}
-
 // Helper: swap two rows in a matrix (given row indices)
 void swapRows(Matrix *m, int row1, int row2) {
     if (row1 == row2) return;
